@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Student Career Survey</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1 id="title">Student Career Survey</h1>
+  <p id="description">Please fill out this form on what your career goals are.</p>
+  <form method="post" action="" id="survey-form">
+    <fieldset>
+      <label for="name" id="name-label">Name <br><input id="name" type="text" placeholder="Full Name" required /></label>
+      <label for="email" id="email-label">Email <br><input id="email" type="email" placeholder="Email" required /></label>
+      <label for="number" id="number-label">Age<br> <input id="number" type="number" min="10" max="100" placeholder="Age" required></label>
+    </fieldset> 
+    <fieldset><!--radio buttons-->
+      <legend>What is your student status? </legend>
+      <label for="not-student"> <input id="not-student" type="radio" name="student-status" class="inline" value="not-a-student" checked> Not A Student</label>
+      <label for="current-student"> <input id="current-student" type="radio" name="student-status" class="inline" value="currently-a-student"> Currently A Student</label>
+      <label for="transferring-student"> <input id="transferring-student" type="radio" name="student-status" class="inline" value="transfer-student"> Transferring Student</label>
+      </fieldset>
+    <fieldset>
+      <label for="career-field" name="career-field">What field do you want a career in? 
+        <select id="dropdown" required>
+          <option value="">Please select one </option
+          <option value="1">Undecided
+          </option>
+          <option value="2">Architecture and Engineering</option>
+          <option value="3">Arts, Culture and Entertainment</option>
+          <option value="4">Business, Management, and Administration</option>
+          <option value="5">Communications </option>
+          <option value="6">Community and Social Services</option>
+          <option value="7">Education</option>
+          <option value="8">Science and Technology</option>
+          <option value="9">Installation, Repair, and Maintenance</option>
+          <option value="10">Farming, Fishing, and Forestry</option>
+          <option value="11">Government</option>
+          <option value="12">Health and Medicine</option>
+          <option value="13">Law and Public Policy</option>
+          <option value="14">Sales</option>
+        </select
+      </label>
+    </fieldset>
+    <fieldset>
+      <label for="bio">Tell us about yourself or reason for career choice: 
+        <textarea id="bio" name="bio" rows="3" col="100" placeholder="Tell us your story..." required></textarea>
+        </label>
+    </fieldset>
+    <fieldset>
+    <label for="desired-salary">
+      <h4 id="desired-salary">What is your desired salary? </h4><br>
+      <input class="block" id="below-thirty" type="checkbox" name="below-thirty" value="1" > < $30,000 </input><br>
+      <input class="inline" id="thirty-forty" type="checkbox" name="thirty-forty" value="2">$30,000 - $40,000 </input><br>
+      <input class="inline" id="forty-fifty" type="checkbox" name="forty-fifty" value="3">$40,000 - $50,000 </input><br>
+      <input class="inline" id="fifty-sixty" type="checkbox" name="fifty-sixty" value="4">$50,000 - $60,000 </input><br>
+      <input class="inline" id="sixty-seventy" type="checkbox" name="sixty-seventy" value="5">$60,000 - $70,000 </input><br>
+      <input class="inline" id="seventy-eighty" type="checkbox" name="seventy-eighty" value="6">$70,000 - $80,000 </input><br>
+      <input class="inline" id="eighty-ninety" type="checkbox" name="eighty-ninety" value="7">$80,000 - $90,000 </input><br>
+      <input class="inline" id="ninety-hundred" type="checkbox" name="ninety-hundred" value="8">$90,000 - $100,000 </input><br>
+      <input class="inline" id="over-hundred" type="checkbox" name="over-hundred" value="9">> $100,000</input><br>
+    </label>
+    </fieldset>
+    <div class="submit-button">
+    <input type="submit" id="submit" value="Submit">
+    </div>
+    </form>
+
+</body>
+</html>

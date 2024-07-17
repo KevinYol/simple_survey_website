@@ -1,0 +1,82 @@
+
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-image: url("https://www.rathinamcollege.edu.in/wp-content/uploads/2021/05/7-Tips-to-Help-Students-Prepare-for-Their-Careers-1178x589.jpeg");
+  background-position: center;
+  background-size: cover;
+  color: #f5f6f7;
+  font-family: Tahoma;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+h1, p {
+  margin: 1em auto;
+  text-align: center;
+}
+
+form {
+  width: 60vw;
+  max-width: 600px;
+  min-width: 400px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+  background-color: rgb(20,20,20, 0.90);
+  padding-left: 10px;
+  border-radius: 15px;
+}
+
+legend{
+  font-size: 1.5rem;
+}
+
+fieldset {
+  border: none;
+  padding: 1rem 0;
+  border-bottom: 3px solid #3b3b4f;
+  
+}
+
+fieldset:last-of-type {
+  border-bottom: none;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+.inline {
+  margin: 10px 7px;
+}
+
+#name, #email{
+  width:98%;
+
+}
+#name, #email, #number {
+  border-radius: 5px;
+  font-size: 2rem;
+}
+
+#dropdown, #bio {
+  border-radius: 10px;
+  font-size: 2rem;
+  width: 98%;
+}
+
+#desired-salary{
+  margin: 0;
+}
+
+#submit {
+  width:150px;
+  height: 50px;
+  font-size: 2rem;
+  border-radius: 10px;
+  position: relative;
+  left: 175px;
+  
+  }
+
